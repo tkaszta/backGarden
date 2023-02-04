@@ -1,0 +1,203 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "com.example",
+    "module": "demo",
+    "version": "0.0.1-SNAPSHOT",
+    "attributes": {
+      "org.gradle.status": "integration"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "7.6"
+    }
+  },
+  "variants": [
+    {
+      "name": "apiElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.version": 8,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-api"
+      },
+      "files": [
+        {
+          "name": "demo-0.0.1-SNAPSHOT-plain.jar",
+          "url": "demo-0.0.1-SNAPSHOT-plain.jar",
+          "size": 4127,
+          "sha512": "ffebc89983dc88de7d7e50be8a688879dae72c09d42df7a2c2e78f03b9c992dbd43af662e162a7dfaa656f28b08528964797221883bfcf507a35247768cc00b7",
+          "sha256": "fcba20c509723c8cf78a29975e50a3d7160a7c6602ca60a997c8d082d0e26b39",
+          "sha1": "13b538b16668938fb7bd871605eb1295980cfc48",
+          "md5": "55b7802450dd722af2d857d16ccdf014"
+        }
+      ]
+    },
+    {
+      "name": "runtimeElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.version": 8,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-runtime"
+      },
+      "dependencies": [
+        {
+          "group": "org.springframework",
+          "module": "spring-jdbc",
+          "version": {
+            "requires": "5.3.24"
+          },
+          "excludes": [
+            {
+              "group": "com.google.protobuf",
+              "module": "protobuf-java"
+            }
+          ]
+        },
+        {
+          "group": "com.mysql",
+          "module": "mysql-connector-j",
+          "version": {
+            "requires": "8.0.31"
+          },
+          "excludes": [
+            {
+              "group": "com.google.protobuf",
+              "module": "protobuf-java"
+            }
+          ]
+        },
+        {
+          "group": "com.zaxxer",
+          "module": "HikariCP",
+          "version": {
+            "requires": "3.4.1"
+          },
+          "excludes": [
+            {
+              "group": "com.google.protobuf",
+              "module": "protobuf-java"
+            }
+          ]
+        },
+        {
+          "group": "org.projectlombok",
+          "module": "lombok",
+          "version": {
+            "requires": "1.18.24"
+          },
+          "excludes": [
+            {
+              "group": "com.google.protobuf",
+              "module": "protobuf-java"
+            }
+          ]
+        },
+        {
+          "group": "org.mapstruct",
+          "module": "mapstruct",
+          "version": {
+            "requires": "1.5.3.Final"
+          },
+          "excludes": [
+            {
+              "group": "com.google.protobuf",
+              "module": "protobuf-java"
+            }
+          ]
+        },
+        {
+          "group": "org.springframework.boot",
+          "module": "spring-boot-starter",
+          "version": {
+            "requires": "2.6.14"
+          },
+          "excludes": [
+            {
+              "group": "com.google.protobuf",
+              "module": "protobuf-java"
+            }
+          ]
+        },
+        {
+          "group": "org.springframework.boot",
+          "module": "spring-boot-starter-web",
+          "version": {
+            "requires": "2.6.14"
+          },
+          "excludes": [
+            {
+              "group": "com.google.protobuf",
+              "module": "protobuf-java"
+            }
+          ]
+        },
+        {
+          "group": "org.springframework.boot",
+          "module": "spring-boot-starter-validation",
+          "version": {
+            "requires": "2.6.14"
+          },
+          "excludes": [
+            {
+              "group": "com.google.protobuf",
+              "module": "protobuf-java"
+            }
+          ]
+        },
+        {
+          "group": "org.springframework.boot",
+          "module": "spring-boot-starter-data-jpa",
+          "version": {
+            "requires": "2.6.14"
+          },
+          "excludes": [
+            {
+              "group": "com.google.protobuf",
+              "module": "protobuf-java"
+            }
+          ]
+        },
+        {
+          "group": "javax.xml.bind",
+          "module": "jaxb-api",
+          "version": {
+            "requires": "2.4.0-b180830.0359"
+          },
+          "excludes": [
+            {
+              "group": "com.google.protobuf",
+              "module": "protobuf-java"
+            }
+          ]
+        },
+        {
+          "group": "com.microsoft.sqlserver",
+          "module": "mssql-jdbc"
+        },
+        {
+          "group": "ch.qos.logback",
+          "module": "logback-classic",
+          "version": {
+            "requires": "1.2.3"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "demo-0.0.1-SNAPSHOT-plain.jar",
+          "url": "demo-0.0.1-SNAPSHOT-plain.jar",
+          "size": 4127,
+          "sha512": "ffebc89983dc88de7d7e50be8a688879dae72c09d42df7a2c2e78f03b9c992dbd43af662e162a7dfaa656f28b08528964797221883bfcf507a35247768cc00b7",
+          "sha256": "fcba20c509723c8cf78a29975e50a3d7160a7c6602ca60a997c8d082d0e26b39",
+          "sha1": "13b538b16668938fb7bd871605eb1295980cfc48",
+          "md5": "55b7802450dd722af2d857d16ccdf014"
+        }
+      ]
+    }
+  ]
+}
