@@ -13,6 +13,21 @@ repositories {
 	mavenCentral()
 }
 
+publishing {
+	publications {
+		customLibrary(MavenPublication) {
+			from components.java
+		}
+	}
+
+	repositories {
+		maven {
+			name = 'sampleRepo'
+			url = layout.buildDirectory.dir("repo")
+		}
+	}
+}
+
 dependencies {
 	// https://mvnrepository.com/artifact/org.springframework/spring-jdbc
 	implementation group: 'org.springframework', name: 'spring-jdbc', version: '5.3.24'
